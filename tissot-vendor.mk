@@ -48,6 +48,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/xiaomi/tissot/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/xiaomi/tissot/proprietary/bin/wcnss_service:system/bin/wcnss_service \
+    vendor/xiaomi/tissot/proprietary/vendor/etc/public.libraries.txt:system/vendor/etc/public.libraries.txt \
     vendor/xiaomi/tissot/proprietary/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:system/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
     vendor/xiaomi/tissot/proprietary/etc/acdbdata/QRD/QRD_General_cal.acdb:system/etc/acdbdata/QRD/QRD_General_cal.acdb \
     vendor/xiaomi/tissot/proprietary/etc/acdbdata/QRD/QRD_Global_cal.acdb:system/etc/acdbdata/QRD/QRD_Global_cal.acdb \
@@ -1136,3 +1137,9 @@ PRODUCT_PACKAGES += \
     com.qti.location.sdk \
     qdcm_calib_data_nt35532_fhd_video_mode_dsi_panel \
     qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel
+
+# Perf
+PRODUCT_PACKAGES += \
+    com.qualcomm.qti.Performance.xml \
+    libqti_performance \
+    QPerformance
